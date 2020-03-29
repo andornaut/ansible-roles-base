@@ -94,4 +94,7 @@
   become: true
 
 - import_tasks: gog.yml
+
+- import_tasks: mrs.yml
+
 - import_tasks: storage-space-alert.yml
