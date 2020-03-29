@@ -8,7 +8,7 @@
 - name: Install gog
   get_url:
     url: https://github.com/andornaut/gog/releases/download/{{ gog_version.json.tag_name }}/gog-linux-amd64
-    dest: /usr/local/bin/
+    dest: /usr/local/bin/gog
     mode: 0755
   become: true
 
