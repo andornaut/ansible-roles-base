@@ -60,6 +60,7 @@
       - sysstat
       - tmux
       - tree
+      - unrar
       - unzip
       - vim
       - wget
