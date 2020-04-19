@@ -5,6 +5,7 @@
       - acpi
       - atool
       - atop
+      - autoconf
       - autotools-dev
       - bash
       - build-essential
