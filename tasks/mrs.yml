@@ -1,0 +1,14 @@
+---
+- name: Get the latest version of mrs
+  uri:
+    url: https://api.github.com/repos/andornaut/mrs/releases/latest
+    return_content: "yes"
+  register: mrs_version
+
+- name: Install mrs
+  get_url:
+    url: https://github.com/andornaut/mrs/releases/download/{{ mrs_version.json.tag_name }}/mrs-linux-amd64
+    dest: /usr/local/bin/mrs
+    mode: 0755
+  become: true
+

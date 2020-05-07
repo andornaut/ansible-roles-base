@@ -5,6 +5,7 @@
       - acpi
       - atool
       - atop
+      - autoconf
       - autotools-dev
       - bash
       - build-essential
@@ -61,6 +62,7 @@
       - sysstat
       - tmux
       - tree
+      - unrar
       - unzip
       - vim
       - wget
@@ -95,4 +97,7 @@
   become: true
 
 - import_tasks: gog.yml
+
+- import_tasks: mrs.yml
+
 - import_tasks: storage-space-alert.yml
